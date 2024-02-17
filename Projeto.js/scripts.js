@@ -12,7 +12,6 @@ function convertValues() {
     currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {style: "currency", currency: "USD"})
     .format(convertedValue)
 
-  console.log(convertedValue)
 }
 
  convertButton.addEventListener("click", convertValues)
