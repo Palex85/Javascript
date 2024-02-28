@@ -81,7 +81,7 @@ section{
 }
 
 arrow-img{
-    margin: 15px 0;
+    margin-left: -10px;
 }
 
 currency-box{
@@ -91,12 +91,20 @@ currency-box{
     gap: 4px;
 }
 
-currency-value, .currency-value-to-convert, .currency {
+currency-value, .currency-value-to-convert{
 
     color: #555555;
     font-weight: 700;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+}
 
+currency-real{
+
+    color: #555555;
+    font-weight: 700;
+    margin-left: -10px;
 
 }
 
