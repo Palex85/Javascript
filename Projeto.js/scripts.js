@@ -25,7 +25,21 @@ function convertValues() {
     }).format(inputCurrencyValue / euroToday)
   }
 
-
 }
 
+function changeCurrency(){
+ const currencyName = document.getElementById("currency-name")
+const currencyImage = document.querySelector(".currency-img")
+ if (currencySelect.value == "dollar"){
+  currencyName.innerHTML = "Dollar americano"
+  currencyImage.src = "./assets/Dollar.png"
+ }
+ if (currencySelect.value == "euro"){
+  currencyName.innerHTML = "Euro"
+  currencyImage.src ="./assets/Euro.png"
+}
+convertValues()
+}
+
+currencySelect.addEventListener("change",changeCurrency)
 convertButton.addEventListener("click", convertValues)
